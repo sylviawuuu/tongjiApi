@@ -1,0 +1,103 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+.title, .title2 {
+  font-size: 56px;
+  text-align: center;
+}
+.title {
+  animation: blurFadeInOut 3s ease-in backwards;
+  opacity: 0;
+}
+.title2 {
+  animation: blurFadeIn 3s ease-in backwards;
+}
+.title > h1 {
+  line-height: 640px;
+}
+.inline-div {
+  display: inline-block;
+}
+.border-line {
+  border: 1px solid #333;
+}
+.map-title {
+  font-size: 20px;
+}
+.subtitle {
+  font-size: 16px;
+  text-align: left;
+  text-indent: 16px;
+}
+.bar-chart {
+  width:400px;
+  height:400px;
+}
+.line-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  animation: blurFadeIn 3s ease-in backwards;
+  display: flex;
+  height: 640px;
+}
+.box-content {
+  width: 320px;
+  height: 180px;
+  background-color: rgb(91, 184, 247);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 180px;
+  text-align: center;
+  margin: auto;
+}
+
+#hello {
+  animation-delay: 0s;
+}
+#content {
+  margin-top: -700px;
+  animation-delay: 2.5s;
+}
+#content2 {
+  margin-top: 180px;
+  animation-delay: 4s;
+}
+@keyframes blurFadeInOut {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 40px #fff;
+    transform: scale(0.9);
+  }
+  20%,
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 1px #fff;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 0 50px #fff;
+    transform: scale(0);
+  }
+}
+@keyframes blurFadeIn {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 40px #fff;
+    transform: scale(0.9);
+  }
+  20%,
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 1px #fff;
+    transform: scale(1);
+  }
+}

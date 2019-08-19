@@ -1,0 +1,19 @@
+{
+  "name": "tongjiAPI",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "echarts": "^4.2.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "http-errors": "~1.6.3",
+    "md5": "^2.2.1",
+    "morgan": "~1.9.1",
+    "request": "^2.88.0"
+  }
+}

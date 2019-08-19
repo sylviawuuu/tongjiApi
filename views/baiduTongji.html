@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>百度统计demo</title>
+    <base href="/">
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c2219745bd23d02fbaffe6e90e444229";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script language="JavaScript">var _trackDataType = 'web'; var _trackData = _trackData || [];</script>
+    <script type="text/javascript" charset="utf-8" id="kpyfx_js_id_10006703"
+        src="//fxsjcj.kaipuyun.cn/count/10006703/10006703.js"></script>
+</head>
+
+<body ng-app='myApp'>
+    <div class="title2" ng-controller="tongjiCtrl">
+        <h5>百度统计API DEMO</h5>
+        <div class="inline-div bar-chart" id="chart-pv"></div>
+        <div class="inline-div bar-chart" id="chart-ip"></div>
+        <div class="inline-div bar-chart" id="chart-uv"></div>
+    </div>
+    <div class="title2">
+        <h5>访问量统计</h5>
+        <table width="90%" align="center">
+            <tbody>
+                <tr>
+                    <td width="75%" ng-controller="districtPVCtrl">
+                        <div id="map-pv" class="map-title" style="height:600px">截止本日累计访问总量</div>
+                    </td>
+                    <td width="25%" height="420px" ng-controller="trendHourCtrl">
+                        <div class="subtitle" style="height:199px">
+                            <div class="line-chart" id="line-ip"></div>
+                        </div>
+                        <div class="subtitle" style="height:199px">
+                            <div class="line-chart" id="line-pv"></div>
+                        </div>
+                        <div class="subtitle" style="height:199px">
+                            <div class="line-chart" id="line-uv"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="plugins/angular.1.2.32.min.js"></script>
+    <script type="text/javascript" src="javascripts/Common.js"></script>
+    <script src="plugins/echarts/echarts.js"></script>
+    <script src="plugins/echarts/map/js/china.js"></script>
+    <!-- custom -->
+    <script type="text/javascript" src="javascripts/tongji.js"></script>
+    <script type="text/javascript" src="javascripts/trend_hour.js"></script>
+    <script type="text/javascript" src="javascripts/district_pv.js"></script>
+</body>
+
+</html>
