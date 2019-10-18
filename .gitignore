@@ -1,2 +1,7 @@
 node_modules
 dist
+.DS_Store
+public/.DS_Store
+public/plugins/.DS_Store
+public/plugins/echarts/.DS_Store
+public/plugins/echarts/extension/.DS_Store

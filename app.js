@@ -30,6 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/test', function(req, res) {
+  res.render('test')
+});
 app.use('/data', getDataRouter);
 app.use('/trend', trendDataRouter);
 app.use('/district', getDistrictRpt);

@@ -4,7 +4,7 @@ body {
 a {
   color: #00B7FF;
 }
-.title, .title2 {
+.title, .title2, .title3, .title4 {
   font-size: 56px;
   text-align: center;
 }
@@ -57,6 +57,11 @@ a {
   line-height: 180px;
   text-align: center;
   margin: auto;
+}
+
+.container {
+  width: 75%;
+  height: 750px;
 }
 
 #hello {
