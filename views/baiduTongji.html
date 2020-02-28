@@ -28,13 +28,13 @@
         <div class="inline-div bar-chart" id="chart-ip"></div>
         <div class="inline-div bar-chart" id="chart-uv"></div>
     </div>
-    <div class="title2">
+    <!-- <div class="title2">
         <h5>访问量统计</h5>
         <table width="100%" align="center">
             <tbody>
                 <tr>
                     <td width="75%" ng-controller="districtPVCtrl">
-                        <div id="map-pv" class="map-title" style="height:600px">截止本日累计访问总量</div>
+                        <div id="map-pv" class="map-title" style="height:600px"></div>
                     </td>
                     <td width="25%" height="620px" ng-controller="trendHourCtrl">
                         <div class="subtitle" style="height:199px">
@@ -50,26 +50,57 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="title3" ng-controller="mapCtrl">
+    </div> -->
+    <!-- <div class="title3">
         <h5>访问量统计</h5>
-        <div id="map" class="container"></div>
-
-    </div>
-    <div class="title4" ng-controller="map2Ctrl">
+        <table width="100%" align="center">
+            <tbody>
+                <tr>
+                    <td width="75%" ng-controller="mapCtrl">
+                        <div id="map" class="container"></div>
+                    </td>
+                    <td width="25%" height="620px" ng-controller="trendHourCtrl">
+                        <div class="subtitle" style="height:199px">
+                            <div class="line-chart" id="line-ip2"></div>
+                        </div>
+                        <div class="subtitle" style="height:199px">
+                            <div class="line-chart" id="line-pv2"></div>
+                        </div>
+                        <div class="subtitle" style="height:199px">
+                            <div class="line-chart" id="line-uv2"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <div class="title4">
         <h5>发文统计</h5>
-        <div id="map2" class="container"></div>
+        <table width="100%" align="center">
+            <tbody>
+                <tr>
+                    <td width="75%" style="position: relative;">
+                        <div id="my-map" class="map-title" style="height:600px" ng-controller="map2Ctrl"></div>
+                        <div id="my-map2" ng-controller="map3Ctrl"></div>
+                    </td>
+                    <td width="25%">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <script src="//webapi.amap.com/maps?v=1.4.15&key=674ae93e5b4102b0bd09b3036a28bdc7"></script>
-    <script src="//webapi.amap.com/loca?v=1.3.2&key=674ae93e5b4102b0bd09b3036a28bdc7"></script>
-    <script src="//a.amap.com/jsapi_demos/static/citys.js"></script>
+
+    <script src="//webapi.amap.com/maps?v=1.4.15&key=674ae93e5b4102b0bd09b3036a28bdc7&plugin=AMap.DistrictLayer"></script>
+    <!-- <script src="//webapi.amap.com/loca?v=1.3.2&key=674ae93e5b4102b0bd09b3036a28bdc7"></script> -->
+    <!-- <script src="//a.amap.com/jsapi_demos/static/citys.js"></script> -->
+    <script src="//webapi.amap.com/ui/1.0/main.js"></script>
 
     <script type="text/javascript" src="plugins/angular.1.2.32.min.js"></script>
     <script type="text/javascript" src="javascripts/Common.js"></script>
     <script type="text/javascript" src="plugins/echarts/echarts.min.js"></script>
-    <script type="text/javascript" src="plugins/echarts/map/js/china.js"></script>
     <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=EG9nmt9mAZeqVf7sXS3wQ07uH3DXq6KX"></script>
     <script type="text/javascript" src="plugins/echarts/bmap.min.js"></script>
+    <script type="text/javascript" src="plugins/echarts/echarts-amap.min.js"></script>
 
     <!-- custom -->
     <script type="text/javascript" src="javascripts/tongji.js"></script>

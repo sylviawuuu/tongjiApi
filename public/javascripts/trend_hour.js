@@ -8,7 +8,7 @@
 
         var optionIP = {
             title: {
-                text: "IP数"
+                text: "IP数",
             },
             tooltip: {},
             legend: {
@@ -67,6 +67,9 @@
         var chartIP = echarts.init(document.getElementById("line-ip"));
         var chartPV = echarts.init(document.getElementById("line-pv"));
         var chartUV = echarts.init(document.getElementById("line-uv"));
+        var chartIP2 = echarts.init(document.getElementById("line-ip2"));
+        var chartPV2 = echarts.init(document.getElementById("line-pv2"));
+        var chartUV2 = echarts.init(document.getElementById("line-uv2"));
 
         $http
             .post('trend/', {
@@ -88,7 +91,7 @@
                     xTime.push(hour);
                 }
                 xTime = xTime.reverse();
-                console.log(xTime);
+                // console.log(xTime);
                 // 获取数值
                 for (j = 0; j < fields.length; j++) {
                     var d = {};
@@ -114,6 +117,9 @@
                 chartIP.setOption(optionIP);
                 chartPV.setOption(optionPV);
                 chartUV.setOption(optionUV);
+                chartIP2.setOption(optionIP);
+                chartPV2.setOption(optionPV);
+                chartUV2.setOption(optionUV);
             })
             .error(function (err) {
                 $window.alert(err);
